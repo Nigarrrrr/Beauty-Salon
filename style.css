@@ -14,7 +14,7 @@ html {
   }
   
 
-/* 🔥 Top Offer Bar */
+/*Top Offer Bar */
 .top-navbar {
     background: linear-gradient(to right, #ec407a, #f06292);
     color: #ffffff;
@@ -60,7 +60,7 @@ html {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* full screen height */
+    height: 100vh; 
     overflow: hidden;
   }
   
@@ -104,10 +104,10 @@ html {
 
 .typewriter {
     font-style: italic;
-    overflow: hidden; /* Hide the text while typing */
-    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; 
+    white-space: nowrap; 
     margin: 0 auto;
-    letter-spacing: .15em; /* Spacing between letters */
+    letter-spacing: .15em; 
     animation: typing 4s steps(30) 1s 1 normal forwards, blinkCaret 0.75s step-end infinite;
   }
   
@@ -169,13 +169,13 @@ html {
     font-weight: bold;
     border: 2px solid transparent;
     border-radius: 25px;
-    text-transform: uppercase; /* Uppercase text for emphasis */
+    text-transform: uppercase; 
 }
 
 .hero-text .btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 25px rgba(120, 115, 245, 0.9);
-    border-color: #fff; /* Add border color to make it more noticeable */
+    border-color: #fff; 
 }
 
 .hero-text .btn i {
@@ -190,7 +190,7 @@ html {
 
 .hero-text .btn:active {
     transform: scale(1);
-    background: linear-gradient(45deg, #ff6ec4, #365d85); /* Active state with darker background */
+    background: linear-gradient(45deg, #ff6ec4, #365d85); 
     box-shadow: 0 0 20px rgba(255, 110, 196, 0.8);
 }
 
@@ -271,7 +271,7 @@ html {
 
 
 
-/* 🌸 Header Styling */
+/* Header Styling */
 header {
     background: linear-gradient(to right, #ba68c8, #f06292);
     color: rgb(14, 14, 14);
@@ -389,12 +389,12 @@ nav ul li a:hover {
 .about-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Keeps the image full without distortion */
+    object-fit: cover; 
     display: block;
 }
 
 .about-header:hover .about-img {
-    transform: scale(1.5); /* Zoom-in effect on hover */
+    transform: scale(1.5); 
 }
 
 
@@ -417,7 +417,7 @@ nav ul li a:hover {
 .full-text {
     display: none;
     margin-top: 20px;
-    padding: 10px; /* Increased padding */
+    padding: 10px; 
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgb(55, 47, 47);
@@ -429,7 +429,7 @@ nav ul li a:hover {
 }
 
 .read-more-toggle {
-    display: none; /* Hide the checkbox */
+    display: none; 
 }
 
 /* services Content  */
@@ -741,7 +741,7 @@ body {
     position: absolute;
     top: 13px;
     left: 20px;
-    width: 60px; /* Adjust logo size */
+    width: 60px; 
     height: auto;
     border-radius: 50%;
 }
