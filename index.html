@@ -1,11 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beauty Salon</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beauty Salon</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Top Navbar -->
+  <section class="top-navbar">
+    <div class="offer-text">20% OFF on all services! Limited time offer.</div>
+    <div class="call-booking">Call for Booking: +880 9613224433</div>
+  </section>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="../logo.png" alt="Beauty Salon Logo" />
+      <span class="brand-name">A&N</span>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#offers">Offers</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-right">
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+        <div class="search-icon"></div>
+      </div>
+      <a href="#" class="sign-in-btn">Sign In</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-section">
+      <img src="./bg1.jpg" alt="Background" class="bg-img" />
+      <div class="hero-text">
+        <h2 class="typewriter">Welcome to our Beauty Salon</h2>
+        <p>Enhance your beauty with our expert services.</p>
+        <a href="#" class="btn" onclick="openModal()">Book an Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2>Book an Appointment</h2>
+      <form class="booking-form">
+        <input type="text" placeholder="Full Name" required />
+        <input type="tel" placeholder="Phone Number (e.g., +8801XXXXXXXXX)" required />
+        <select required>
+          <option value="">-- Choose a Service --</option>
+          <option value="facial">Facial</option>
+          <option value="haircut">Haircut</option>
+          <option value="makeup">Makeup</option>
+          <option value="henna">Henna</option>
+        </select>
+        <input type="date" required />
+        <input type="time" required />
+        <select required>
+          <option value="">-- Payment Method --</option>
+          <option value="bkash">bKash</option>
+          <option value="nagad">Nagad</option>
+          <option value="bank">Bank Transfer</option>
+        </select>
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal Script -->
+  <script>
+    function openModal() {
+      document.getElementById('bookingModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('bookingModal').style.display = 'none';
+    }
+
+    window.onclick = function (event) {
+      const modal = document.getElementById('bookingModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    };
+  </script>
+
+</body>
+</html>
+<section class="about-us"id="about">
+        <div class="about-header">
+            <img src="./bg2.png" alt="Beauty Salon" class="about-img">
+        </div>
+        <div class="about-text">
+            <h2>About Us</h2>
+            <p class="preview-text">
+                At A&N Beauty Salon, we see beauty as a celebration of self-expression and confidence. Our commitment is to provide bespoke services that highlight your natural charm, leaving you feeling revitalized and radiant.
+            </p>
+            <input type="checkbox" id="read-more-toggle" class="read-more-toggle">
+            <label for="read-more-toggle" class="read-more">Read More</label>
+            <div class="full-text">
+                <p>We believe that beauty is a reflection of self-care and confidence. Our mission is to provide personalized services that enhance your natural beauty, leaving you feeling refreshed and rejuvenated. With a dedicated team of professional stylists, makeup artists, and beauty experts, we ensure each service is tailored to your unique needs.</p>
+                <p>From luxurious hair treatments and precision haircuts to flawless makeup and skincare routines, we use only the best products and the latest techniques. Our goal is to create a warm, welcoming environment where you can relax, unwind, and let our experts take care of the rest.</p>
+                <p>Whether you're preparing for a special occasion or simply indulging in a day of self-care, A&N Beauty Salon is here to make you feel your absolute best. We pride ourselves on our commitment to quality, customer satisfaction, and a personalized experience. Your beauty is our passion, and we promise to help you shine inside and out.</p>
+            </div>
+        </div>
+    </section>
     
+
+
+
+
+<section class="service-title"id="services">
+    <h2>Our Services</h2>
+    <div class="service-categories">
+        <span class="service-category">Body Care</span>
+        <span class="service-category">Hair Care</span>
+        <span class="service-category">Makeover</span>
+        <span class="service-category">Bridal</span>
+        <span class="service-category">Packages</span>
+        <span class="service-category">Premium</span>
+        <span class="service-category">Henna Art</span>
+        <span class="service-category">Hair Removal</span>
+        <span class="service-category">Hairstyle</span>
+    </div>
+</section>
+
+<section class="service-container"id="services-container">
+    <div class="service-item">
+        <img src="./bg3.jpg" alt="Service Image" class="service-img">
+        <h3>Manicure and Pedicure</h3>
+        <p>Our Manicure & Pedicure services are designed to give your hands and feet the pampering they deserve! 💅✨ Enjoy a relaxing experience with our professional treatments, including nail trimming, shaping, cuticle care, exfoliation, and moisturizing. 🌸💖 Whether you're preparing for a special occasion or just need some self-care, we’ll leave your nails looking flawless! 🌟🦶</p>
+    </div>
+    <div class="service-item">
+        <img src="./bg6.jpg" alt="Service Image" class="service-img">
+        <h3>Hair styling</h3>
+        <p>For a chic and stunning look, our hair styling service is designed just for you! From trendy cuts to flawless curls, sleek straightening to elegant updos, we cater to all your hair needs. Whether it’s a special occasion or a regular refresh, let us give your hair the perfect style."Step into our salon and leave with a look that turns heads and boosts your confidence!"✂💇‍♀✨</p>
+    </div>
+    <div class="service-item">
+        <img src="./bg4.jpg" alt="Service Image" class="service-img">
+        <h3>Makeover</h3>
+        <p>Get a glamorous makeover at A&N Beauty Salon! ✨ Whether you're preparing for a special event or simply want to refresh your look, our expert stylists are here to give you the perfect transformation. 💇‍♀💅 With personalized services, we ensure you leave feeling confident and fabulous! 💖 Book your appointment today!</p>
+    </div>
+    <div class="service-item">
+        <img src="./bg7.jpg" alt="Service Image" class="service-img">
+        <h3>Bridal Services</h3>
+        <p>For bridal services, we offer an exclusive package to make your big day unforgettable! 💍✨ From personalized hair and makeup styling 💄💇‍♀ to stunning bridal henna designs 🌸, we ensure every detail is perfect. Our expert team will create a flawless look that matches your vision and personality, making you feel confident and beautiful! 👰💖</p>
+    </div>
+    <div class="service-item">
+        <img src="./bg5.webp" alt="Service Image" class="service-img">
+        <h3>Skincare</h3>
+        <p>Indulge in our rejuvenating skincare services tailored just for you! ✨ From deep cleansing facials to nourishing treatments, we ensure your skin feels refreshed and glowing. 🌿 Our expert therapists use premium products to enhance your natural beauty. 💆‍♀ Book now and let your skin shine with radiance.Experience a soothing atmosphere and leave with a youthful glow that lasts. 💖 Treat yourself to the best skincare and feel the difference in every touch.🌟</p>
+    </div>
+    <div class="service-item">
+        <img src="./bg6.jpg" alt="Service Image" class="service-img">
+        <h3>Henna Art</h3>
+        <p>Discover the beauty of Henna Art at A&N Salon! ✨ Our expert artists create stunning, intricate designs tailored to your style 🌸. Whether it’s for a special occasion or just for fun, our henna designs are sure to add a personal touch to your look! 💫 Book an appointment today and let your hands speak art! 🖌</p>
+    </div>
+</section>
+<section class="offers-header" id="offers"> 
+    <h1>Offers</h1>
+</section>
+
+<section class="offers-containers">
+    <div class="offer-container">
+        <div class="offer-logo">
+            <img src="./logo1.jpg" alt="Budget Friendly Logo">
+        </div>
+        <h3 class="offer-title">Budget Friendly</h3>
+        <p>Every bride deserves to shine on her special day! My luxurious bridal makeovers ensure a flawless, long-lasting look that enhances your natural beauty with elegance and grace.</p>
+        <div class="hover-offer-box">Latest Offer: 10% off on bridal packages this week only!</div>
+    </div>
+
+    <div class="offer-container">
+        <div class="offer-logo">
+            <img src="./logo2.webp" alt="Access to Luxury Logo">
+        </div>
+        <h3 class="offer-title">Access to Luxury</h3>
+        <p>Step into a world of elegance with our Luxury Offers, crafted for those who crave the finest in beauty care. Enjoy VIP treatments including signature facials, premium hair styling, body polishing, and exclusive product access—all in a serene, spa-like setting.</p>
+        <div class="hover-offer-box">Latest Offer: Free hair styling with every facial booked!</div>
+    </div>
+
+    <div class="offer-container">
+        <div class="offer-logo">
+            <img src="./logo3.webp" alt="Premium Package Logo">
+        </div>
+        <h3 class="offer-title">Premium Package</h3>
+        <p>Treat yourself to the ultimate pampering experience with our exclusive Premium Package Offers! Designed for those who love a touch of luxury, this package includes a full makeover, relaxing facial, deluxe manicure & pedicure, and more.</p>
+        <div class="hover-offer-box">Latest Offer: Get a free gift hamper with korean skin care every Premium Package!</div>
+    </div>
+</section>
+<section class="experience-header" id="  experience">
+    <div class="experience-header-inner">
+        <h1>Experience</h1>
+        <div class="experience-stats">
+            <div class="stat-box">
+                <span class="stat-number">5K+</span>
+                <span class="stat-label">HAPPY CUSTOMER</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">EXPERTS & MAKE-UP ARTISTS</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="experience-containers" id="experience">
+    <div class="experience-item">
+        <h3 class="experience-title">Celebrity & Bridal Makeup</h3>
+        <p>We have had the incredible opportunity to work with renowned personalities in the celebrity makeup industry, crafting flawless looks for brides, public figures, and high-profile events. Our experience with diverse skin tones and preferences allows me to create customized looks that enhance natural beauty while maintaining elegance and sophistication.</p>
+    </div>
+
+    <div class="experience-item">
+        <h3 class="experience-title">Editorial & Fashion Industry Experience</h3>
+        <p>Our journey in makeup artistry has taken me behind the scenes of fashion shoots, magazine editorials, and high-end brand campaigns. We have worked closely with models, designers, and photographers to bring creative visions to life. From bold, avant-garde concepts to soft, ethereal beauty, we have mastered runway-ready and editorial makeup techniques that stand out under the spotlight.</p>
+    </div>
+
+    <div class="experience-item">
+        <h3 class="experience-title">Red Carpet & Special Events Makeup</h3>
+        <p>A red carpet moment demands nothing less than perfection! We have had the privilege of working with celebrities, influencers, and VIP clients for exclusive events, award shows, and media appearances. Our signature touch ensures glamorous, long-wearing makeup that enhances facial features under bright lights and cameras.</p>
+    </div>
+
+    <div class="experience-item">
+        <h3 class="experience-title">Celebrity Makeup Workshops & Masterclasses</h3>
+        <p>As a professional in the celebrity makeup industry, We are passionate about sharing our expertise through exclusive makeup workshops and masterclasses. We have trained aspiring makeup artists and beauty enthusiasts in advanced techniques, industry trends, and product knowledge to help them achieve professional-level skills.</p>
+    </div>
+</section>
+
+<section class="contact-header" id="contact">
+    <img src="./logo.png" alt="A&N Beauty Salon Logo" class="logo"> <!-- Add logo here -->
+    <h1>Contact Us</h1>
+</section>
+
+<section class="contact-form" id="contact">
+    <h2>Get in Touch with A&N Beauty Salon</h2>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</section>
+
+<section class="contact-info" id="contact">
+    <h2>Our Location</h2>
+    <p>Visit A&N Beauty Salon for a luxurious experience at:</p>
+    <address>
+        <p>123 Beauty St, City, Country</p>
+        <p>Phone: +880 9613224433</p>
+        <p>Email: <a href="mailto:info@anbeautysalon.com">info@anbeautysalon.com</a></p>
+    </address>
+
+    <!-- Social Media Links -->
+    <div class="social-media">
+        <a href="https://www.facebook.com/A&NBeautySalon" target="_blank" class="social-icon">
+            <img src="./fb.jpg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/a&n_beautysalon" target="_blank" class="social-icon">
+            <img src="./insta.jpg" alt="Instagram">
+        </a>
+    </div>
+</section>
+
 </body>
 </html>
